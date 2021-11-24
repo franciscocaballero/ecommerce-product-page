@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="src/sass/main.scss" />
   <title>Frontend Mentor | E-commerce product page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
+
 <body>
+  <div class='container'>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+    <nav>
+      <div class="nav-item-box nav-item-box--1">
+        <img src="images/icon-menu.svg" alt="menu-icon">
+        <img class='logo' src="images/logo.svg" alt="logo">
+      </div>
+      <div class="nav-item-box nav-item-box--2">
+        <img src="images/icon-cart.svg" alt="logo">
+        <img class="profile-pic" src=" images/image-avatar.png" alt="logo">
+      </div>
+    </nav>
+  </div>
 
-  Sneaker Company
+  <header>
+    <img class="product-img-main" src="images/image-product-1.jpg" alt="">
+  </header>
+  <div class="container">
+    <div class="main">
+      <h3>Sneaker Company</h3>
+      <h1>Fall Limited Edition Sneaker</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dolore aliquam! Beatae quia quis id vel, est
+        veritatis animi repellat iste expedita voluptatibus architecto adipisci accusamus doloremque officia qui
+        necessitatibus.
+      </p>
 
-  Fall Limited Edition Sneakers
+      <div class="pricing-box">
+        <div class="sale-box">
+          <span class='price-text'>$125.00</span>
+          <span class="price-percent">50%</span>
+        </div>
+        <span class="old-price">$250.00
+        </span>
+      </div>
+      <div class="counter-box btn-counter">
+        <img src="images/icon-minus.svg" alt="">
+        <span>0</span>
+        <img src="images/icon-plus.svg" alt="">
+      </div>
+      <button class="btn">Add to cart</button>
+    </div>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
