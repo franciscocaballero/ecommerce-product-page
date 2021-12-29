@@ -45,6 +45,7 @@ section {
 /* -------- Typography  ------------*/
 h1 {
     font-size: 2rem;
+    width: 31rem;
 }
 
 h3 {
@@ -125,6 +126,7 @@ p {
 
 .pricing-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0 2rem 0;
@@ -161,15 +163,38 @@ p {
 
 
 .info-box {
-    min-height: 50vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
+
+
 /* -------- Media-queries  ------------*/
 
-@media (min-width: 80rem) {
+@media (min-width: 60rem) {
+    .test-1 {
+        border: 4px solid green;
+        min-height: 85vh;
+        min-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* -------- Typography  ------------*/
+    h1 {
+        font-size: 3rem;
+    }
+
+    .old-price {
+        min-width: 100%;
+    }
+
+    .sale-box {
+        margin-bottom: 1rem;
+    }
 
     /* -------- buttons  ------------*/
     .btn {
@@ -210,10 +235,14 @@ p {
         border: 1px solid red;
         padding: 1rem;
         flex: 1;
+        align-items: center;
+        max-height: 70vh;
+        max-width: 75%;
+
 
         .img-desktop-header {
-            border: 1px solid blue;
-
+            border: 3px solid blue;
+            border-radius: 15px;
         }
 
         .img-gallery {
@@ -224,11 +253,15 @@ p {
             list-style: none;
             padding: 0;
             border: 3px solid black;
+            width: 500px;
+
 
             .product-img-main {
-                border-radius: 1rem;
-                // flex: 1;
-                flex-basis: 10px;
+                // border-radius: .9rem;
+                // flex-basis: 10px;
+                max-height: 6rem;
+                // max-width: 7rem;
+                border-radius: 0.5rem;
             }
         }
     }
@@ -237,6 +270,7 @@ p {
     .info-box {
         border: 3px solid yellow;
         flex: 1;
+        max-width: 90%;
     }
 
 
