@@ -40,9 +40,9 @@ nav {
     display: none;
 }
 
-@media (min-width: 80rem) {
+@media (min-width: 60rem) {
     nav {
-        border-bottom: 1px solid var(--clr-light-grayish-blue);
+        border-bottom: 3px solid var(--clr-light-grayish-blue);
     }
 
     .desktop-nav {
